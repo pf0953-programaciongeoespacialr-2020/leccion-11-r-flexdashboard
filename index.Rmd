@@ -17,12 +17,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Recursos de interés
-* Página oficial del paquete flexdashboard: [flexdashboard: R Markdown Format for Flexible Dashboards](https://cran.r-project.org/web/packages/flexdashboard/)
+* Página oficial del paquete flexdashboard: [flexdashboard: R Markdown Format for Flexible Dashboards](https://cran.r-project.org/web/packages/flexdashboard/).
 * Documentación de flexdashboard: [flexdashboard: Easy interactive dashboards for R](https://rmarkdown.rstudio.com/flexdashboard/).
 * Capítulo 5 del libro "R Markdown: The Definitive Guide", de Xie et al.: [Chapter 5 Dashboards](https://bookdown.org/yihui/rmarkdown/dashboards.html).
 
 ## Introducción
-Los tableros de control, también llamados cuadros de mando o _dashboards_, son documentos interactivos que contienen diversas presentaciones de un conjunto de datos como, por ejemplo, tablas, gráficos estadísticos y mapas. Puede verse algunos ejemplos de tableros de control en la página de [ejemplos de flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/examples.html).
+Los tableros de control, también llamados cuadros de mando o _dashboards_, son documentos interactivos que contienen diversas visualizaciones de un conjunto de datos como, por ejemplo, tablas, gráficos estadísticos y mapas. Pueden verse algunos ejemplos de tableros de control en la página de [ejemplos de flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/examples.html).
 
 El paquete [flexdashboard](https://cran.r-project.org/web/packages/flexdashboard/) del lenguaje de programación [R](https://www.r-project.org/), convierte un documento en la sintaxis [R Markdown](https://rmarkdown.rstudio.com/) en un tablero de control.
 
@@ -39,7 +39,15 @@ Carga de paquetes:
 library(flexdashboard)
 ```
 
-## Uso básico
-1. Desde RStudio, cree un tablero de control de ```flexdashboard``` con la opción *File* - *New File* - *R Markdown...* - *From Template* - *Flex Dashboard*. Nombre el archivo como _index.Rmd_.
-2. En su cuenta de GitHub, cree un nuevo repositorio llamado _tutorial-flexdashboard_.
-3. Suba el archivo _index.Rmd_ al nuevo repositorio.
+## Implementación de un tablero de control
+1. En RStudio, cree un tablero de control de ```flexdashboard``` con la opción *File* - *New File* - *R Markdown...* - *From Template* - *Flex Dashboard*. Nombre el archivo como _index.Rmd_.
+2. Con ```Knit```, genere el archivo _index.html_.
+3. En su cuenta de GitHub, cree un repositorio llamado _tablero-control-mammalia-gam_.
+4. Suba los archivos _index.Rmd_ e _index.html_ al nuevo repositorio.
+5. Active la opción _GitHub Pages_ en su nuevo repositorio, para así poder visualizar el tablero de control resultante.
+6. Clone el nuevo repositorio a su computadora y edítelo con RStudio, agregando el siguente contenido:
+```
+```
+7. Continúe editando el archivo .Rmd y, cuando lo considere necesario, sincronice el repositorio local con el de su cuenta en GitHub.
+
+Puede ver una versión mas avanzada del tablero de control en [https://geoprocesamiento-2020i.github.io/tablero-control-mammalia-gam/](https://geoprocesamiento-2020i.github.io/tablero-control-mammalia-gam/) (código fuente en [https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam](https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam)).
