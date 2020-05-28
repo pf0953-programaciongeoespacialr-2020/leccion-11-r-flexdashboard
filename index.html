@@ -1546,7 +1546,7 @@ div.tocify {
 <div id="introducción" class="section level2">
 <h2>Introducción</h2>
 <p>Los tableros de control, también llamados cuadros de mando o <em>dashboards</em>, son documentos interactivos que contienen diversas visualizaciones de un conjunto de datos como, por ejemplo, tablas, gráficos estadísticos y mapas. Pueden verse algunos ejemplos de tableros de control en la página de <a href="https://rmarkdown.rstudio.com/flexdashboard/examples.html">ejemplos de flexdashboard</a>.</p>
-<p>El paquete <a href="https://cran.r-project.org/web/packages/flexdashboard/">flexdashboard</a> del lenguaje de programación <a href="https://www.r-project.org/">R</a>, convierte un documento en la sintaxis <a href="https://rmarkdown.rstudio.com/">R Markdown</a> en un tablero de control.</p>
+<p>El paquete <a href="https://cran.r-project.org/web/packages/flexdashboard/">flexdashboard</a>, del lenguaje de programación <a href="https://www.r-project.org/">R</a>, convierte un documento en la sintaxis <a href="https://rmarkdown.rstudio.com/">R Markdown</a> en un tablero de control.</p>
 </div>
 <div id="preparativos" class="section level2">
 <h2>Preparativos</h2>
@@ -1561,15 +1561,15 @@ library(flexdashboard)</code></pre>
 <h2>Implementación de un tablero de control</h2>
 <ol style="list-style-type: decimal">
 <li>En RStudio, cree un tablero de control de <code>flexdashboard</code> con la opción <em>File</em> - <em>New File</em> - <em>R Markdown…</em> - <em>From Template</em> - <em>Flex Dashboard</em>. Nombre el archivo como <em>index.Rmd</em>.</li>
-<li>Con <code>Knit</code>, genere el archivo <em>index.html</em>.</li>
 <li>En su cuenta de GitHub, cree un repositorio llamado <em>tablero-control-mammalia-gam</em>.</li>
-<li>Suba los archivos <em>index.Rmd</em> e <em>index.html</em> al nuevo repositorio.</li>
-<li>Active la opción <em>GitHub Pages</em> en su nuevo repositorio, para así poder visualizar el tablero de control resultante.</li>
+<li>Suba el archivo <em>index.Rmd</em> al nuevo repositorio.</li>
 <li>Clone el nuevo repositorio a su computadora y edítelo con RStudio, agregando el siguente contenido:</li>
 </ol>
 <pre><code></code></pre>
-<ol start="7" style="list-style-type: decimal">
-<li>Continúe editando el archivo .Rmd y, cuando lo considere necesario, sincronice el repositorio local con el de su cuenta en GitHub.</li>
+<ol start="5" style="list-style-type: decimal">
+<li>Con <code>Knit</code>, genere el archivo <em>index.html</em> y suba ambos archivos (.Rmd y .html) a su repositorio en GitHub.</li>
+<li>Active la opción <em>GitHub Pages</em> en su nuevo repositorio, para así poder visualizar el tablero de control resultante.</li>
+<li>Continúe editando en su computadora el archivo .Rmd y, cuando lo considere necesario, sincronice los archivos de su repositorio local con los de su cuenta en GitHub.</li>
 </ol>
 <p>Puede ver una versión mas avanzada del tablero de control en <a href="https://geoprocesamiento-2020i.github.io/tablero-control-mammalia-gam/">https://geoprocesamiento-2020i.github.io/tablero-control-mammalia-gam/</a> (código fuente en <a href="https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam">https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam</a>).</p>
 </div>
