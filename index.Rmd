@@ -1,7 +1,7 @@
 ---
 title: "El paquete flexdashboard de R para implementación de tableros de control"
 author: "Manuel Vargas"
-date: "2020-05-28"
+date: "2020-11-11"
 output:
   html_document:
     theme: readable    
@@ -17,14 +17,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Recursos de interés
-* Página oficial del paquete flexdashboard: [flexdashboard: R Markdown Format for Flexible Dashboards](https://cran.r-project.org/web/packages/flexdashboard/).
-* Documentación de flexdashboard: [flexdashboard: Easy interactive dashboards for R](https://rmarkdown.rstudio.com/flexdashboard/).
-* Capítulo 5 del libro "R Markdown: The Definitive Guide", de Xie et al.: [Chapter 5 Dashboards](https://bookdown.org/yihui/rmarkdown/dashboards.html).
+* Sitio web del curso: [PF0953 Programación geoespacial en R](https://pf0953-programaciongeoespacialr-2020.github.io/)
+* Datos utilizados en el curso: [Datos del curso PF0953 Programación geoespacial en R](https://github.com/pf0953-programaciongeoespacialr-2020/datos)
+* Sitio web de flexdashboard: [flexdashboard: Easy interactive dashboards for R](https://rmarkdown.rstudio.com/flexdashboard/)
+* Documentación del paquete flexdashboard: [flexdashboard: R Markdown Format for Flexible Dashboards](https://cran.r-project.org/web/packages/flexdashboard/)
+* Capítulo 5 del libro "R Markdown: The Definitive Guide", de Xie et al.: [Chapter 5 Dashboards](https://bookdown.org/yihui/rmarkdown/dashboards.html)
 
 ## Introducción
 Los tableros de control, también llamados cuadros de mando o _dashboards_, son documentos interactivos que contienen diversas visualizaciones de un conjunto de datos como, por ejemplo, tablas, gráficos estadísticos y mapas. Pueden verse algunos ejemplos de tableros de control en la página de [ejemplos de flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/examples.html).
 
-El paquete [flexdashboard](https://cran.r-project.org/web/packages/flexdashboard/), del lenguaje de programación [R](https://www.r-project.org/), convierte un documento en la sintaxis [R Markdown](https://rmarkdown.rstudio.com/) en un tablero de control.
+El paquete [flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/), del lenguaje de programación [R](https://www.r-project.org/), convierte un documento en la sintaxis [R Markdown](https://rmarkdown.rstudio.com/) en un tablero de control.
 
 ## Preparativos
 Instalación de paquetes:
@@ -39,13 +41,5 @@ Carga de paquetes:
 library(flexdashboard)
 ```
 
-## Implementación de un tablero de control
-1. En RStudio, cree un tablero de control de ```flexdashboard``` con la opción *File* - *New File* - *R Markdown...* - *From Template* - *Flex Dashboard*. Nombre el archivo como _index.Rmd_.
-2. En su cuenta de GitHub, cree un repositorio llamado _tablero-control-mammalia-gam_.
-3. Suba el archivo _index.Rmd_ al nuevo repositorio.
-4. Clone el nuevo repositorio a su computadora y edítelo con RStudio, agregando el contenido del archivo [https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam/blob/master/index.Rmd](https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam/blob/master/index.Rmd).
-5. Con ```Knit```, genere el archivo _index.html_ y suba ambos archivos (.Rmd y .html) a su repositorio en GitHub.
-6. Active la opción _GitHub Pages_ en su nuevo repositorio, para así poder visualizar el tablero de control resultante.
-7. Continúe editando en su computadora el archivo .Rmd y, cuando lo considere necesario, sincronice los archivos de su repositorio local con los de su cuenta en GitHub.
-
-Puede ver una versión mas avanzada del tablero de control en [https://geoprocesamiento-2020i.github.io/tablero-control-mammalia-gam/](https://geoprocesamiento-2020i.github.io/tablero-control-mammalia-gam/) (código fuente en [https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam](https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam)).
+## Ejemplo de tablero de control
+A manera de ejemplo, puede observar un tablero de control con datos de COVID-19 para Costa Rica en [https://pf0953-programaciongeoespacialr-2020.github.io/tablero-control-covid19-cr/](https://pf0953-programaciongeoespacialr-2020.github.io/tablero-control-covid19-cr/) y su código fuente en [https://github.com/pf0953-programaciongeoespacialr-2020/leccion-11-r-flexdashboard](https://github.com/pf0953-programaciongeoespacialr-2020/leccion-11-r-flexdashboard).

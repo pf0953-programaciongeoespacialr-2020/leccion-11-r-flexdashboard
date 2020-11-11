@@ -11,7 +11,7 @@
 
 <meta name="author" content="Manuel Vargas" />
 
-<meta name="date" content="2020-05-28" />
+<meta name="date" content="2020-11-11" />
 
 <title>El paquete flexdashboard de R para implementación de tableros de control</title>
 
@@ -1530,7 +1530,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">El paquete flexdashboard de R para implementación de tableros de control</h1>
 <h4 class="author">Manuel Vargas</h4>
-<h4 class="date">2020-05-28</h4>
+<h4 class="date">2020-11-11</h4>
 
 </div>
 
@@ -1538,15 +1538,17 @@ div.tocify {
 <div id="recursos-de-interés" class="section level2">
 <h2>Recursos de interés</h2>
 <ul>
-<li>Página oficial del paquete flexdashboard: <a href="https://cran.r-project.org/web/packages/flexdashboard/">flexdashboard: R Markdown Format for Flexible Dashboards</a>.</li>
-<li>Documentación de flexdashboard: <a href="https://rmarkdown.rstudio.com/flexdashboard/">flexdashboard: Easy interactive dashboards for R</a>.</li>
-<li>Capítulo 5 del libro “R Markdown: The Definitive Guide”, de Xie et al.: <a href="https://bookdown.org/yihui/rmarkdown/dashboards.html">Chapter 5 Dashboards</a>.</li>
+<li>Sitio web del curso: <a href="https://pf0953-programaciongeoespacialr-2020.github.io/">PF0953 Programación geoespacial en R</a></li>
+<li>Datos utilizados en el curso: <a href="https://github.com/pf0953-programaciongeoespacialr-2020/datos">Datos del curso PF0953 Programación geoespacial en R</a></li>
+<li>Sitio web de flexdashboard: <a href="https://rmarkdown.rstudio.com/flexdashboard/">flexdashboard: Easy interactive dashboards for R</a></li>
+<li>Documentación del paquete flexdashboard: <a href="https://cran.r-project.org/web/packages/flexdashboard/">flexdashboard: R Markdown Format for Flexible Dashboards</a></li>
+<li>Capítulo 5 del libro “R Markdown: The Definitive Guide”, de Xie et al.: <a href="https://bookdown.org/yihui/rmarkdown/dashboards.html">Chapter 5 Dashboards</a></li>
 </ul>
 </div>
 <div id="introducción" class="section level2">
 <h2>Introducción</h2>
 <p>Los tableros de control, también llamados cuadros de mando o <em>dashboards</em>, son documentos interactivos que contienen diversas visualizaciones de un conjunto de datos como, por ejemplo, tablas, gráficos estadísticos y mapas. Pueden verse algunos ejemplos de tableros de control en la página de <a href="https://rmarkdown.rstudio.com/flexdashboard/examples.html">ejemplos de flexdashboard</a>.</p>
-<p>El paquete <a href="https://cran.r-project.org/web/packages/flexdashboard/">flexdashboard</a>, del lenguaje de programación <a href="https://www.r-project.org/">R</a>, convierte un documento en la sintaxis <a href="https://rmarkdown.rstudio.com/">R Markdown</a> en un tablero de control.</p>
+<p>El paquete <a href="https://rmarkdown.rstudio.com/flexdashboard/">flexdashboard</a>, del lenguaje de programación <a href="https://www.r-project.org/">R</a>, convierte un documento en la sintaxis <a href="https://rmarkdown.rstudio.com/">R Markdown</a> en un tablero de control.</p>
 </div>
 <div id="preparativos" class="section level2">
 <h2>Preparativos</h2>
@@ -1557,18 +1559,9 @@ install.packages(&quot;flexdashboard&quot;)</code></pre>
 <pre class="r"><code># flexdashboard
 library(flexdashboard)</code></pre>
 </div>
-<div id="implementación-de-un-tablero-de-control" class="section level2">
-<h2>Implementación de un tablero de control</h2>
-<ol style="list-style-type: decimal">
-<li>En RStudio, cree un tablero de control de <code>flexdashboard</code> con la opción <em>File</em> - <em>New File</em> - <em>R Markdown…</em> - <em>From Template</em> - <em>Flex Dashboard</em>. Nombre el archivo como <em>index.Rmd</em>.</li>
-<li>En su cuenta de GitHub, cree un repositorio llamado <em>tablero-control-mammalia-gam</em>.</li>
-<li>Suba el archivo <em>index.Rmd</em> al nuevo repositorio.</li>
-<li>Clone el nuevo repositorio a su computadora y edítelo con RStudio, agregando el contenido del archivo <a href="https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam/blob/master/index.Rmd">https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam/blob/master/index.Rmd</a>.</li>
-<li>Con <code>Knit</code>, genere el archivo <em>index.html</em> y suba ambos archivos (.Rmd y .html) a su repositorio en GitHub.</li>
-<li>Active la opción <em>GitHub Pages</em> en su nuevo repositorio, para así poder visualizar el tablero de control resultante.</li>
-<li>Continúe editando en su computadora el archivo .Rmd y, cuando lo considere necesario, sincronice los archivos de su repositorio local con los de su cuenta en GitHub.</li>
-</ol>
-<p>Puede ver una versión mas avanzada del tablero de control en <a href="https://geoprocesamiento-2020i.github.io/tablero-control-mammalia-gam/">https://geoprocesamiento-2020i.github.io/tablero-control-mammalia-gam/</a> (código fuente en <a href="https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam">https://github.com/geoprocesamiento-2020i/tablero-control-mammalia-gam</a>).</p>
+<div id="ejemplo-de-tablero-de-control" class="section level2">
+<h2>Ejemplo de tablero de control</h2>
+<p>A manera de ejemplo, puede observar un tablero de control con datos de COVID-19 para Costa Rica en <a href="https://pf0953-programaciongeoespacialr-2020.github.io/tablero-control-covid19-cr/">https://pf0953-programaciongeoespacialr-2020.github.io/tablero-control-covid19-cr/</a> y su código fuente en <a href="https://github.com/pf0953-programaciongeoespacialr-2020/leccion-11-r-flexdashboard">https://github.com/pf0953-programaciongeoespacialr-2020/leccion-11-r-flexdashboard</a>.</p>
 </div>
 
 
@@ -1621,7 +1614,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
